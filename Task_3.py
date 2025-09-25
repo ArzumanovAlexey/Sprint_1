@@ -6,11 +6,13 @@ world_champions = {
     2018: 'Франция',
 }
 world_champions[2022] = 'Аргентина'
-print(world_champions)
+
+for year in world_champions:
+    print(year, '-', world_champions[year])
 
 country = 'Италия'
 
 if country in world_champions.values():
-    print('Италия cтановилась чемпионом мира по футболу в 21 веке!')
+    print('Италия становилась чемпионом мира по футболу в 21 веке!')
 else:
     print('Италия не выигрывала чемпионат мира по футболу в 21 веке.')
